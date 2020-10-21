@@ -7,8 +7,12 @@ def create_app(config_class=Config):
 
 
     from myapp.home.routes import Home
+    from myapp.admin.routes import Admin
+    from myapp.users.routes import User
 
 
     app.register_blueprint(Home)
+    app.register_blueprint(Admin)
+    app.register_blueprint(User)
 
     return app

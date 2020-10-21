@@ -4,7 +4,7 @@ from flaskwebgui import FlaskUI #get the FlaskUI class
 app = create_app()
 
 # Feed it the flask app instance 
-ui = FlaskUI(app, width=1000, height=200)
+# ui = FlaskUI(app)
 
 # do your logic as usual in Flask
 # @app.route("/")
@@ -13,4 +13,5 @@ ui = FlaskUI(app, width=1000, height=200)
 
 # call the 'run' method
 if __name__ == "__main__":
-  ui.run()
+  app.run()
+  # ui.run()
