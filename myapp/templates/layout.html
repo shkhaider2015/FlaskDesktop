@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Desktop</title>
+
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css" />
+
+
+
+</head>
+<body>
+
+    <div>
+        <!-- Drawer -->
+        <nav class="navbar navbar-light justify-content-between" style="background-color: #e3f2fd;">
+            <a class="navbar-brand">Navbar</a>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </nav>
+
+
+    <div class="container">
+
+        {% block content %}
+
+
+
+        {% endblock %}
+
+    </div>
+
+    </div>
+
+
+
+
+    <script src="../static/jquery/jquery.js" ></script>
+    <script src="../static/bootstrap/js/bootstrap.bundle.js" ></script>
+    <script src="../static/bootstrap/js/bootstrap.bundle.min.js" ></script>
+ 
+    
+</body>
+</html>
